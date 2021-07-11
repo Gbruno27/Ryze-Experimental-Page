@@ -1,0 +1,1143 @@
+@import url(//db.onlinewebfonts.com/c/12420e8c141ca7c3dff41de2d59df13e?family=BeaufortforLOL-Bold);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Open Sans;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+.clear {
+  clear: both;
+}
+
+/*HEADER INIT*/
+header {
+  background-color: rgb(30, 30, 30);
+  width: 100%;
+  padding: 5px 2%;
+  position: fixed;
+  z-index: 1;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.lolLogo {
+  background-image: url(../assets/lolLogo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  margin: 0 1%;
+  width: 125px;
+  height: 70px;
+  cursor: pointer;
+}
+
+.desktopMenu {
+  display: flex;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+.desktopMenu ul a {
+  text-decoration: none;
+  padding: 0 10px;
+  display: inline-block;
+}
+
+.desktopMenu ul a li {
+  color: white;
+  font-size: 18px;
+}
+
+
+.overlayMenu {
+  display: none;
+  background-image: url(../assets/menu.png);
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.overlayContainer {
+  display: none;
+  position: absolute;
+  background-color: rgb(30, 30, 30);
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  cursor: initial;
+}
+
+.overlayMobileMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overlayMobileMenu div {
+  margin: 0 0 30px 0;
+  border-bottom: 1px solid white;
+  width: 85%;
+}
+
+.overlayMobileMenu div:first-child {
+  margin-top: 20px;
+}
+
+.overlayMobileMenu div a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+/*HEADER END*/
+
+/*SPLASHES INIT*/
+.splashes {
+  background-color: #183248;
+  padding: 130px 2% 90px 2%;
+}
+
+.splashesContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.splashArt {
+  width: 100%;
+}
+
+.individualSplash {
+  width: 85%;
+  padding-top: 30%;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0 0 1pt 1pt goldenrod;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.championName {
+  color: white;
+  font-size: 4vw;
+  font-family: BeaufortforLOL-Bold;
+  font-style: italic;
+}
+
+.championTitle {
+  color: white;
+  font-size: 3vw;
+  margin: 10px 0 30px 0;
+  font-family: BeaufortforLOL-Bold;
+}
+
+.sliderWrapper {
+  width: 85%;
+  background-color: rgb(30, 30, 30);
+  margin: 10px 0 0 0;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0 0 1pt 1pt goldenrod;
+}
+
+.sliderFrag {
+  width: 20%;
+  padding: 9px 0;
+}
+
+.splashIcon {
+  width: 40%;
+  padding-top: 40%;
+  border-radius: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.skinName {
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  padding-top: 7px;
+}
+/*SPLASHES END*/
+
+/*ABOUT INIT*/
+.about {
+  background-color: white;
+  padding: 30px 2%;
+}
+
+.aboutTitle {
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.aboutTitle div h2 {
+  font-size: 20px;
+  padding: 0 20px;
+  text-decoration: underline;
+  font-style: italic;
+  display: inline-block;
+  background-color: white;
+  position: relative;
+  color: #183248;
+}
+
+.aboutTitle .hline {
+  width: 50%;
+  height: 0;
+  display: none;
+  position: absolute;
+  border: 1px solid #183248;
+}
+
+.aboutContainer {
+  width: 100%;
+  max-width: 1280px;
+  overflow: hidden;
+}
+
+.championSpecifications {
+  width: 100%;
+  display: flex;
+}
+
+.championClass {
+  display: flex;
+  justify-content: center;
+}
+
+.class {
+  border-right: 0.1em solid #183248;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.class img {
+  width: 170px;
+}
+
+.classSpecs {
+  border-left: 0.1em solid #183248;
+  border-right: 0.1em solid #183248;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.classSpecs p {
+  margin: 10px;
+  font-size: 20px;
+  color: #183248;
+}
+
+.classAverage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2%;
+  width: 100%;
+  border-left: 0.1em solid #183248;
+}
+
+.classAverage h2 {
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #183248;
+}
+
+.classAverage p {
+  width: 100px;
+  color: #183248;
+}
+
+.damageAverage {
+  display: flex;
+  align-items: center;
+}
+
+.damageAverage span {
+  width: 16px;
+  height: 16px;
+  background-color: #183248;
+  border-radius: 100%;
+  margin: 5px;
+}
+
+.utilityAverage {
+  display: flex;
+  align-items: center;
+}
+
+.utilityAverage span {
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 1px solid #183248;
+  border-radius: 100%;
+  margin: 5px;
+}
+
+.utilityAverage span:first-of-type {
+  background-color: #183248;
+}
+
+.mobilityAverage {
+  display: flex;
+  align-items: center;
+}
+
+.mobilityAverage span {
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 1px solid #183248;
+  border-radius: 100%;
+  margin: 5px;
+}
+
+.mobilityAverage span:first-of-type {
+  background-color: #183248;
+}
+
+.ccAverage {
+  display: flex;
+  align-items: center;
+}
+
+.ccAverage span {
+  width: 16px;
+  height: 16px;
+  background-color: #183248;
+  border: 1px solid #183248;
+  border-radius: 100%;
+  margin: 5px;
+}
+
+.ccAverage span:nth-of-type(4),
+.ccAverage span:nth-of-type(5) {
+  background-color: transparent;
+}
+
+.toughnessAverage {
+  display: flex;
+  align-items: center;
+}
+
+.toughnessAverage span {
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 1px solid #183248;
+  border-radius: 100%;
+  margin: 5px;
+}
+
+.toughnessAverage span:first-of-type {
+  background-color: #183248;
+}
+
+.championStats {
+  display: flex;
+  justify-content: center;
+}
+
+.championBrief {
+  width: 100%;
+  text-align: justify;
+  border-right: 0.1em solid #183248;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+
+.championBrief p {
+  color: #183248;
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.championPrice {
+  width: 100%;
+  border-right: 0.1em solid #183248;
+  border-left: 0.1em solid #183248;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+
+.championPrice h2 {
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #183248;
+}
+
+.prices p {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: #183248;
+}
+
+p.blueEssence img {
+  width: 70px;
+  margin-left: -15px;
+}
+
+p.riotPoints img {
+  width: 25px;
+  margin-left: 5px;
+}
+
+.championGenerals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2%;
+  width: 100%;
+  border-left: 0.1em solid #183248;
+}
+
+.championGenerals h2 {
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #183248;
+}
+
+.championGenerals p {
+  width: 100px;
+  color: #183248;
+}
+
+.championDamage {
+  display: flex;
+  align-items: center;
+}
+
+.championDamage span {
+  width: 16px;
+  height: 16px;
+  background-color: #183248;
+  border-radius: 100%;
+  margin: 5px;
+}
+
+.championUtility {
+  display: flex;
+  align-items: center;
+}
+
+.championUtility span {
+  width: 16px;
+  height: 16px;
+  background-color: #183248;
+  border: 1px solid #183248;
+  border-radius: 100%;
+  margin: 5px;
+}
+
+.championUtility span:nth-of-type(4),
+.championUtility span:nth-of-type(5) {
+  background-color: transparent;
+}
+
+.championMobility {
+  display: flex;
+  align-items: center;
+}
+
+.championMobility span {
+  width: 16px;
+  height: 16px;
+  background-color: #183248;
+  border: 1px solid #183248;
+  border-radius: 100%;
+  margin: 5px;
+}
+
+.championMobility span:nth-of-type(4),
+.championMobility span:nth-of-type(5) {
+  background-color: transparent;
+}
+
+.championCC {
+  display: flex;
+  align-items: center;
+}
+
+.championCC span {
+  width: 16px;
+  height: 16px;
+  background-color: #183248;
+  border: 1px solid #183248;
+  border-radius: 100%;
+  margin: 5px;
+}
+
+.championCC span:nth-of-type(4),
+.championCC span:nth-of-type(5) {
+  background-color: transparent;
+}
+
+.championToughness {
+  display: flex;
+  align-items: center;
+}
+
+.championToughness span {
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 1px solid #183248;
+  border-radius: 100%;
+  margin: 5px;
+}
+
+.championToughness span:nth-of-type(1),
+.championToughness span:nth-of-type(2) {
+  background-color: #183248;
+}
+
+.bullets {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bullets span {
+  width: 12px;
+  height: 12px;
+  margin-top: 15px;
+  margin-right: 13px;
+  cursor: pointer;
+  transform: rotate(-45deg);
+  border: 1px solid #183248;
+  background-color: transparent;
+}
+/*ABOUT END*/
+
+/*ABILITIES INIT*/
+.abilities {
+  width: 100%;
+  padding: 30px 2% 120px 2%;
+}
+
+.abilitiesTitle {
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.abilitiesTitle div h2 {
+  font-size: 20px;
+  padding: 0 20px;
+  font-style: italic;
+  text-decoration: underline;
+  display: inline-block;
+  background-color: white;
+  position: relative;
+  color: #183248;
+}
+
+.abilitiesTitle .hline {
+  width: 50%;
+  height: 0;
+  display: none;
+  position: absolute;
+  border: 1px solid #183248;
+}
+
+.abilitiesContainer {
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.championAbilities {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.abilitiesIcons {
+  width: 10%;
+  padding: 20px 0;
+  background-color: #183248;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid goldenrod;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.abilitiesIcons div {
+  width: 55%;
+  padding-top: 55%;
+  margin: 15px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.abilitiesInfo {
+  width: 90%;
+  padding-top: 40%;
+  border-top: 1px solid goldenrod;
+  border-right: 1px solid goldenrod;
+  border-bottom: 1px solid goldenrod;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  background-color: #183248;
+}
+
+.abilitiesInfoWrapper {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  flex-direction: column;
+}
+
+.abilityBrief {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.abilityBrief h2 {
+  margin: 0px;
+  font-size: 15px;
+  padding: 0px 10px 0 0;
+  font-style: italic;
+  position: relative;
+  color: white;
+  background-color: #183248;
+}
+
+.abilityBrief p {
+  margin: 0 5px;
+  color: white;
+  font-size: 12px;
+  max-width: 60%;
+  text-align: justify;
+}
+
+.abilityDemo {
+  width: 45%;
+  padding-top: 30%;
+  margin: 1% auto 0 auto;
+  position: relative;
+}
+
+.abilityDemo video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid goldenrod;
+}
+/*ABILITIES END*/
+
+/*GAMEPLAY INIT*/
+.gameplay {
+  width: 100%;
+  padding: 70px 2% 30px 2%;
+  background-color: #183248;
+}
+
+.gameplayContainer {
+  width: 100%;
+  max-width: 1280px;
+  overflow: hidden;
+}
+
+.gameStages {
+  display: flex;
+}
+
+.gameplayWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.gameplayDemo {
+  width: 50%;
+  padding-top: 30%;
+  background-color: #ccc;
+  align-self: flex-start;
+}
+
+.gameplayBrief {
+  width: 50%;
+  margin: 0 0 0 2%;
+  align-self: flex-start;
+}
+
+.gameplayBrief h2 {
+  color: white;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.gameplayBrief p {
+  text-align: justify;
+  font-size: 15px;
+  color: white;
+  line-height: 30px;
+}
+
+.gameStagesBullets {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.gameStagesBullets span {
+  width: 12px;
+  height: 12px;
+  margin-right: 13px;
+  cursor: pointer;
+  transform: rotate(-45deg);
+  border: 1px solid goldenrod;
+  background-color: transparent;
+}
+/*GAMEPLAY END*/
+
+/*FOOTER INIT*/
+footer {
+  background-color: rgb(30, 30, 30);
+  width: 100%;
+  padding: 10px 2%;
+  position: relative;
+}
+
+.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.riotLogo {
+  background-image: url(../assets/riotLogo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  margin: 0 1%;
+  width: 115px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.riotRights {
+  text-align: center;
+}
+
+.riotRights p {
+  color: white;
+  font-size: 12px;
+}
+/*FOOTER END*/
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1000px) {
+  .splashes {
+    padding: 130px 2% 150px 2%;
+  }
+
+
+  .aboutTitle {
+    padding-bottom: 0;
+  }
+
+  .aboutTitle .hline {
+    display: block;
+  }
+
+  .aboutTitle div h2 {
+    text-decoration: none;
+  }
+
+  .championClass {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+  }
+
+  .class {
+    width: 97%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    border-right: none;
+    border-bottom: 0.1em solid #183248;
+  }
+
+  .class img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .classSpecs {
+    width: 97%;
+    height: 200px;
+    border-left: none;
+    border-right: none;
+    border-top: 0.1em solid #183248;
+    border-bottom: 0.1em solid #183248;
+  }
+
+  .classAverage {
+    width: 97%;
+    height: 200px;
+    border-bottom: 0.15em solid #183248;
+    border-top: 0.1em solid #183248;
+    border-left: none;
+  }
+
+  .championStats {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 620px;
+  }
+
+  .championBrief {
+    width: 97%;
+    height: 200px;
+    border-right: none;
+    border-bottom: 0.1em solid #183248;
+  }
+
+  .championPrice {
+    width: 97%;
+    height: 200px;
+    border-right: none;
+    border-left: none;
+    border-top: 0.1em solid #183248;
+    border-bottom: 0.1em solid #183248;
+  }
+
+  .championGenerals {
+    width: 97%;
+    height: 200px;
+    border-left: none;
+    border-top: 0.1em solid #183248;
+    border-bottom: 0.15em solid #183248;
+  }
+
+  .abilitiesTitle {
+    padding-bottom: 0;
+  }
+
+  .abilitiesTitle .hline {
+    display: block;
+  }
+
+  .abilitiesTitle div h2 {
+    text-decoration: none;
+  }
+
+  .gameplay {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .gameplayWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gameplayDemo {
+    width: 70%;
+    padding-top: 45%;
+    margin-bottom: 20px;
+    background-color: #ccc;
+    align-self: center;
+  }
+
+  .gameplayBrief {
+    width: 90%;
+    align-self: flex-start;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gameplayBrief h2 {
+    color: white;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+  }
+
+  .gameplayBrief p {
+    text-align: justify;
+    align-self: center;
+    font-size: 13px;
+    color: white;
+    line-height: 30px;
+  }
+
+  .gameStagesBullets {
+    width: 5%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .gameStagesBullets span {
+    width: 12px;
+    height: 12px;
+    margin-top: 13px;
+    margin-right: 2%;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    border: 1px solid goldenrod;
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .championAbilities {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .abilitiesIcons {
+    width: 80%;
+    margin-top: 150px;
+    padding: 0;
+    background-color: #183248;
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid goldenrod;
+  }
+
+  .abilitiesIcons div {
+    width: 9%;
+    padding-top: 9%;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  .abilitiesInfo {
+    width: 97%;
+    padding-top: 45%;
+    border: none;
+    background-color: transparent;
+    margin: 20px 0 10px 0;
+    border-bottom-left-radius: 10px;
+  }
+
+  .abilityBrief {
+    flex-direction: column;
+    height: 50px;
+  }
+
+  .abilityBrief h2 {
+    font-size: 15px;
+    font-style: italic;
+    background-color: transparent;
+    position: relative;
+    color: #183248;
+    margin-bottom: 15px;
+  }
+
+  .arcaneMasteryBrief h2,
+  .runePrisionBrief h2 {
+    margin-bottom: 0;
+  }
+
+  .abilityBrief p {
+    color: #183248;
+    font-size: 13px;
+    margin-bottom: 45px;
+    height: 30px;
+    width: 100%;
+    max-width: 100%;
+    text-align: justify;
+  }
+
+  .arcaneMasteryBrief p,
+  .runePrisionBrief p {
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .abilityDemo {
+    width: 75%;
+    padding-top: 51%;
+    margin: 1% auto 0 auto;
+    border: 1px solid goldenrod;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .desktopMenu ul a li {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .splashIcon {
+    border-radius: 0;
+    width: 70%;
+    padding-top: 70%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .skinName {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .runePrisionBrief h2 {
+    margin-bottom: 15px;
+  }
+
+  .runePrisionBrief p {
+    color: #183248;
+    font-size: 13px;
+    margin-bottom: 15px;
+    padding-top: 0;
+    height: 30px;
+    width: 100%;
+    max-width: 100%;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .abilitiesIcons {
+    margin-top: 120px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .lolLogo {
+    background-image: url(../assets/lolMini.png);
+    width: 100px;
+    height: 50px;
+    left: -30px;
+  }
+
+  .desktopMenu {
+    display: none;
+  }
+
+  .overlayMenu {
+    display: block;
+  }
+
+  .footerContainer {
+    justify-content: center;
+  }
+
+  .riotLogo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .abilityBrief p {
+    color: #183248;
+    font-size: 10px;
+    margin-bottom: 45px;
+    height: 30px;
+    width: 100%;
+    max-width: 100%;
+    text-align: justify;
+  }
+
+  .arcaneMasteryBrief p {
+    text-align: center;
+  }
+}
