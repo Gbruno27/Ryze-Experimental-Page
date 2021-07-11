@@ -70,6 +70,9 @@ nav ul {
   font-size: 18px;
 }
 
+.desktopMenu ul a li:hover {
+  text-decoration: underline;
+}
 
 .overlayMenu {
   display: none;

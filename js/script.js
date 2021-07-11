@@ -12,17 +12,15 @@ $(function () {
   selectSkin();
 
   function showMenu() {
+    $('.overlayContainer').click((e) => {
+      e.stopPropagation();
+    });
+
     $('.overlayMenu').click(function () {
-      $('.overlayContainer').click((e) => {
-        e.stopPropagation();
-      });
       $('.overlayContainer').slideToggle(200);
     })
 
     $('.overlayMobileMenu div a').click(function () {
-      $('.overlayContainer').click((e) => {
-        e.stopPropagation();
-      });
       $('.overlayContainer').slideToggle(200);
     })
   };
