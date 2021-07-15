@@ -38,7 +38,14 @@ $(function () {
     $('.splashIcon').eq(0).click();
   };
   
-  window.location.hash = '';
-  $(window).offset().top = 0; 
+	// Remove the Timeout method
+  setTimeout(function() {
+    // Clear the Hash
+    window.location.hash="";
 
+    // Scroll to top of the Page
+    $([document.documentElement, document.body]).animate({
+      scrollTop: 0
+    }, 0);
+  }, 500)
 });
